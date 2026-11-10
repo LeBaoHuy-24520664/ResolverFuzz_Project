@@ -1,14 +1,35 @@
-# Python related files
+# Python
 __pycache__/
 *.py[cod]
 *.so
+*.egg-info/
+.pytest_cache/
 
-# Test output
-test_infra/dump
-test_infra/cdns_test_res
-test_infra/cdns_fallback_test_res
-test_infra/fwd_test_res
-test_infra/recursive_test_res
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
 
-# System files
-.DS_Store
+# IDE
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.dnstap
+*.tmp
+*.pid
+
+# Test results and generated data
+test_infra/cdns_test_res/
+test_infra/cdns_fallback_test_res/
+test_infra/fwd_test_res/
+test_infra/recursive_test_res/
+test_infra/dump/
+test_infra/auth-srv-tmp/
+test_infra/host_tmp/
+
+# Secrets
+.env
+.env.*
